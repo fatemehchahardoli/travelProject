@@ -39,6 +39,7 @@
 #navbar {
   position: sticky;
   top: 0;
+  z-index: 3;
 }
 
 nav {
@@ -66,16 +67,16 @@ nav .section-right {
 }
 nav .section-right ul li {
   display: inline-block;
+  transition: all 0.2s;
+}
+nav .section-right ul li:hover {
+  background-color: #ffc800;
+  padding: 20px;
 }
 nav .section-right ul li a {
   text-decoration: none;
   margin: 20px;
   color: black;
-  transition: all 0.2s;
-}
-nav .section-right ul li a:hover {
-  background-color: #f68657;
-  height: 50px;
 }
 nav .section-right ul li i:hover ul li {
   display: block;

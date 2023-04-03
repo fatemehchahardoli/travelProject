@@ -39,6 +39,7 @@
 #navbar {
   position: sticky;
   top: 0;
+  z-index: 3;
 }
 
 nav {
@@ -66,16 +67,16 @@ nav .section-right {
 }
 nav .section-right ul li {
   display: inline-block;
+  transition: all 0.2s;
+}
+nav .section-right ul li:hover {
+  background-color: #ffc800;
+  padding: 20px;
 }
 nav .section-right ul li a {
   text-decoration: none;
   margin: 20px;
   color: black;
-  transition: all 0.2s;
-}
-nav .section-right ul li a:hover {
-  background-color: #f68657;
-  height: 50px;
 }
 nav .section-right ul li i:hover ul li {
   display: block;
@@ -187,7 +188,7 @@ nav .section-right button i {
   left: 0;
   height: 100%;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.95);
+  background-color: rgba(0, 0, 0, 0.9);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -279,6 +280,10 @@ main button {
   font-weight: 700;
   margin-left: 7rem;
   z-index: 1;
+  transition: all 0.3s;
+}
+main button:hover {
+  background-color: #020a54;
 }
 main .header-img {
   background-image: url("../images/hero-banner.png");
@@ -289,9 +294,11 @@ main .header-img {
   margin-left: 2rem;
 }
 main .header-img .shape-1 {
+  position: relative;
   top: 25rem;
 }
 main .header-img .shape-2 {
+  position: relative;
   top: 1rem;
   left: 30rem;
 }
@@ -370,6 +377,10 @@ section .main .boxes .box:hover {
   border-radius: 5px;
   font-size: 14px;
   font-weight: 700;
+  transition: all 0.3s;
+}
+.about .about_text button:hover {
+  background-color: #020a54;
 }
 
 section .bg {
@@ -430,6 +441,10 @@ section .bg .content .info img {
   font-size: 14px;
   font-weight: 700;
   margin-top: 13px;
+  transition: all 0.3s;
+}
+.FAQ .FAQ_btn button:hover {
+  background-color: #020a54;
 }
 
 .timer {

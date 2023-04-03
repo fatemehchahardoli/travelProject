@@ -16,11 +16,12 @@ const contents = $.querySelectorAll('.content')
 const icons = $.querySelectorAll('.icon')
 const toggles = $.querySelectorAll('.toggle')
 
-let contentElem, toggleElem, iconElem
+let contentElem, toggleElem, iconElem;
+console.log(toggles)
 
 function closeAllTabs() {
-    for (let i = 0; i < contents.length; i++) {
-        contents[i].style.height = '0px'
+    for (let i = 0; i < 3; i++) {
+        contents[i].style.height = '0'
         toggles[i].style.color = '#111130'
         icons[i].classList.remove('fa-minus')
         icons[i].classList.add('fa-plus')
@@ -37,7 +38,7 @@ tabs.forEach(tab => {
         toggleElem = tab.querySelector('.toggle')
         iconElem = tab.querySelector('.icon')
 
-        contentElem.style.height = '80px'
+        contentElem.style.height =contentElem.scrollHeight + 'px'
         toggleElem.style.color = '#0084e9'
         iconElem.classList.add('fa-minus')
         iconElem.classList.remove('fa-plus')
@@ -45,15 +46,7 @@ tabs.forEach(tab => {
     })
 })
 
-//animation menu
-let menus=document.querySelectorAll(".section-right ul li a");
-let box=document.querySelector(".anim");
-menus.forEach(menu=>{
-    menu.addEventListener("mouseenter",event=>{
-        box.style.width=event.target.offsetwidth +'px'
-        box.style.left=event.target.offsetLeft +'px'
-    })
-})
+
 
 //sticky navbar
 let mainNav=document.getElementById("navbar");
