@@ -1,0 +1,64 @@
+@import "_components";
+@import "general";
+@import "layouts";
+
+
+.header {
+    background-image: url('../images/instra4.jpg');
+    background-size: 100% 100%;
+    @include flex(center, center);
+    color: $color-light;
+    height: 25rem;
+    font-size: 2.2em;
+
+}
+
+.map {
+    width: 70%;
+    height: 25rem;
+    background-color: aqua;
+    margin: 0 auto;
+    margin-top: 4rem;
+}
+
+.contact {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+
+    .form {
+        padding-top: 2rem;
+
+        textarea {
+            width: 99%;
+            height: 10rem;
+            padding: 10px 10px;
+            border: 1px solid $border-color;
+        }
+
+        p {
+            font-size: 1.5em;
+            margin-bottom: 1rem;
+        }
+
+        input[type='submit'] {
+            @include style-btn($color-light, $color-main);
+        }
+    }
+
+    .sec-right {
+        padding: 73px 46px;
+
+        ul li {
+            @include flex(start, start);
+            margin-bottom: 26px;
+
+            i {
+                font-size: 1.3em;
+                margin: 8px 6px;
+            }
+        }
+    }
+}
+footer{
+    margin-top: 2rem;
+}

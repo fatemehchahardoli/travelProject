@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="../css/bookTicket.css" />
+    <link rel="stylesheet" href="../css/main.css" />
+
+    <title>bookTicket</title>
+  </head>
+
+  <body>
+      <!-- navbar -->
+      <div class="container-fluid" style="position: sticky; top: 0;">
+       
+        <nav>
+            <div class="section-left">
+                <img src="../images/logo.png" alt="logo" title="travel-Logo">
+            </div>
+            <div class="section-right">
+                <ul>
+                    <li>
+                       <a> <div class="anim start"></div></a>
+                    </li>
+                    <li><a href="../index.html"> Home</a></li>
+                    <!-- <li><a href="pages/events_page.html"> Events</a></li> -->
+                    <li><a href="pages/about.html"> About</a></li>
+                    <li><a href="#"> Blog</a></li>
+                    <li><a href="pages/contact.html"> Content</a></li>
+                    <li><i class=" fa fa-search" id="search"> </i></li>
+                </ul>
+
+                <button type="button"><i class="fa fa-phone"></i>+10-36674665</button>
+            </div>
+        </nav>
+   <div class="search-form" style="display:none;" >
+    <div id="close-search" class=" fa fa-times"></div>
+    <form action="">
+        <input type="search" name="" placeholder="search here..." id="search-box">
+        <label for="search-box" class="fa fa-search"></label>
+    </form>
+
+   </div>
+</div>
+<!-- end navbar-->
+
+<!-- book ticket -->
+<div class="bookTicket">
+    <div class="container">
+      <div class="col-md-6 box">
+        <input class="fnameInput" placeholder="First Name" />
+      </div>
+
+      <div class="col-md-6 box">
+        <input class="lnameInput" placeholder="Last Name" />
+      </div>
+      <div class="col-md-6 box">
+        <input class="phoneInput" placeholder="Phone Number" />
+      </div>
+      <div class="col-md-6 box">
+        <input class="emailInput" placeholder="Email" />
+      </div>
+      <div class="col-md-6 box">
+        <select class="countrySelect" id="countrySelect" onchange="countrySelectFunction()">
+          <option value="Please Select">Please Select ...</option>
+          
+          </option>
+         
+          <option class="option" value="Iran">Iran</option>
+          <option class="option" value="Canada">Canada</option>
+          <option class="option" value="US">United State</option>
+        </select>
+      </div>
+      <div class="col-md-6 box">
+        <select class="citySelect" id="citySelect">
+           
+            <option value="-1">Select City ...</option>
+         
+        </select>
+      </div>
+      <div class="col-md-12 box">
+        <button class="btn">Book a ticket</button>
+      </div>
+    </div>
+</div>
+<!-- end book ticket -->
+
+ <!-- footer -->
+ <footer>
+    <div class="container-fluid">
+        <div class="container">
+            <div id="footer">
+                <div>
+                    <img src="../images/logo2_footer.png" alt="">
+                    <p>Land behold it created good saw after she'd Our set living. Signs midst dominion creepeth
+                        morning laboris nisi ufsit aliquip.</p>
+                    <div class="icons">
+                        <ul>
+                            <li><i class="fa fa-twitter"></i></li>
+                            <li><i class="fa fa-facebook"></i></li>
+                            <li><i class="fa fa-linkedin "></i></li>
+                            <li><i class="fa fa-pinterest-square"></i></li>
+                        </ul>
+                    </div>
+                </div>
+                <div>
+                    <h5>Navigation</h5>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h5>Services</h5>
+                    <ul>
+                        <li><a href="#">Blackforest</a></li>
+                        <li><a href="#">Bodhubon</a></li>
+                        <li><a href="#">Rongdhonu</a></li>
+                        <li><a href="#">Meghrong</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h5>Contact Us</h5>
+                    <ul>
+                        <li><a href="#">76/A, Green Lane, Dhanmondi, NYC</a></li>
+                        <li><a href="#">demomail89@gmail.com</a></li>
+                        <li><a href="#">+10 (78) 738-9083</a></li>
+                    </ul>
+                </div>
+
+            </div>
+            <div class="copyright">
+                <p >Copyright ©2022 All rights reserved | This template is made with by <span>Colorlib</span></p>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- end footer -->
+    <script src="../js/bookTicketScript.js"></script>
+    <script src="../js/main.js"></script>
+  </body>
+</html>
