@@ -41,6 +41,27 @@ closeSearch.addEventListener("click",function(){
     searchForm.style.display="none"
 })
 
+//scroll bar
+let customScroll = document.querySelector('#scroll')
+
+window.addEventListener('scroll', function () {
+    
+    let scrollTop = window.scrollY
+
+    let documentHeight = document.body.clientHeight
+
+    let windowHeight = window.innerHeight
+
+    let scrollPercent = scrollTop / (documentHeight - windowHeight)
+
+    let scrollPercentRounded = Math.round(scrollPercent * 100)
+
+    customScroll.style.width = scrollPercentRounded + '%'
+
+    console.log(scrollPercentRounded);
+})
+
+
 ///////////////accordian
 const $ = document
 const tabs = $.querySelectorAll('.wrapper')

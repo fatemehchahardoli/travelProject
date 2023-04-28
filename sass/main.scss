@@ -33,6 +33,15 @@
 a::selection{
     background-color: #ffc800;
 }
+//scroll bar
+#scroll {
+    height: 10px;
+    background-color: #ffc800;
+    position: fixed;
+    /* width: 50%; */
+  }
+
+
 //search form
 .search-form {
     position: fixed;
