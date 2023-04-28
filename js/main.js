@@ -1,3 +1,27 @@
+
+var mydata=[];
+
+  function loadData() {
+
+    var xhttp = new XMLHttpRequest();
+     xhttp.open("GET", "../json/myJson.json");
+    xhttp.onreadystatechange = function () {
+       if ( xhttp.readyState == 4 && xhttp.status == 200) {
+            var jsObject = JSON.parse(xhttp.responseText);
+            mydata = jsObject;
+            
+        }
+    };
+
+     xhttp.send();
+}
+
+ console.log(mydata)
+loadData();
+
+
+
+
 //preloader
 let loader=document.querySelector(".loader");
 
@@ -104,4 +128,6 @@ clearInterval(x);
 countdown.innerHTML="finish discount time"
 }
 },1000)
+
+
 
