@@ -9,8 +9,7 @@
 }
 
 nav {
-  // position: sticky;
-  // top: 0;
+ 
   padding: 10px 2rem;
   @include grid(repeat(2, 1fr), 70px, end, center);
   grid-template-columns: .5fr 1.5fr;

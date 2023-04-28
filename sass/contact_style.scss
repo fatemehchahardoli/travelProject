@@ -3,20 +3,14 @@
 @import "layouts";
 
 
-.header {
-    background-image: url('../images/instra4.jpg');
-    background-size: 100% 100%;
-    @include flex(center, center);
-    color: $color-light;
-    height: 25rem;
-    font-size: 2.2em;
 
-}
 
 .map {
     width: 70%;
     height: 25rem;
-    background-color: aqua;
+    background-image: url('../images/background\ img.png');
+    background-size: 100% 100%;
+    background-position: center;
     margin: 0 auto;
     margin-top: 4rem;
 }
@@ -41,7 +35,12 @@
         }
 
         input[type='submit'] {
-            @include style-btn($color-light, $color-main);
+            @include style-btn($color-light, $bg-footer);
+            transition: all .3s;
+
+            &:hover {
+                background-color: $bg-btn;
+            }
         }
     }
 
@@ -59,6 +58,7 @@
         }
     }
 }
-footer{
+
+footer {
     margin-top: 2rem;
 }

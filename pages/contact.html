@@ -19,35 +19,37 @@
 <body>
 
     <!-- navbar -->
-    <div class="container-fluid">
-        <div class="container">
-            <nav>
-                <div class="section-left">
-                    <img src="../images/logo.png" alt="logo" title="travel-Logo">
-                </div>
-                <div class="section-right">
-                    <ul>
-                        <li><a href="#"> Home</a></li>
-                        <li><a href="#"> Events</a></li>
-                        <li><a href="#"> About</a></li>
-                        <li><a href="#"> Blog</a></li>
-                        <li><a href="#"> Content</a></li>
-                    </ul>
+    <div class="container-fluid" id="navbar" >
+       
+        <nav>
+            <div class="section-left">
+                <img src="../images/logo.png" alt="logo" title="travel-Logo">
+            </div>
+            <div class="section-right">
+                <ul>
+                  
+                    <li><a href="../index.html"> Home</a></li>
+                    <!-- <li><a href="pages/events_page.html"> Events</a></li> -->
+                    <li><a href="pages/about.html"> About</a></li>
+                    <li><a href="pages/bookTicket.html"> Book aTicket</a></li>
+                    <li><a href="pages/contact.html"> Content</a></li>
+                    <li><i class=" fa fa-search" id="search"> </i></li>
+                </ul>
 
-                    <button type="button"><i class="fa fa-phone"></i>+10-36674665</button>
-                </div>
-            </nav>
-        </div>
-    </div>
-    <!-- end navbar-->
+                <button type="button"><i class="fa fa-phone"></i>+10-36674665</button>
+            </div>
+        </nav>
+   <div class="search-form" style="display:none;" >
+    <div id="close-search" class=" fa fa-times"></div>
+    <form action="">
+        <input type="search" name="" placeholder="search here..." id="search-box">
+        <label for="search-box" class="fa fa-search" id="lable-search"></label>
+    </form>
 
-    <!-- header -->
-    <div class="container-fluid">ّ
-        <div class="header">
-            <h1>contact</h1>
-        </div>
-    </div>
-    <!--end header -->
+   </div>
+</div>
+<!-- end navbar-->
+
     <!-- map -->
     <div class="map"></div>
     <!--end map -->

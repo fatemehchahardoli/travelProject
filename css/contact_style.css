@@ -178,21 +178,12 @@ nav .section-right button i {
   margin-top: 1rem;
 }
 
-.header {
-  background-image: url("../images/instra4.jpg");
-  background-size: 100% 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: white;
-  height: 25rem;
-  font-size: 2.2em;
-}
-
 .map {
   width: 70%;
   height: 25rem;
-  background-color: aqua;
+  background-image: url("../images/background img.png");
+  background-size: 100% 100%;
+  background-position: center;
   margin: 0 auto;
   margin-top: 4rem;
 }
@@ -219,11 +210,15 @@ nav .section-right button i {
   height: 4rem;
   margin-top: 30px;
   color: white;
-  background-color: #7d81a5;
+  background-color: #020a54;
   border: none;
   border-radius: 5px;
   font-size: 14px;
   font-weight: 700;
+  transition: all 0.3s;
+}
+.contact .form input[type=submit]:hover {
+  background-color: #ffc800;
 }
 .contact .sec-right {
   padding: 73px 46px;
