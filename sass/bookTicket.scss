@@ -32,7 +32,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
-    height: 70rem;
+    height: 74rem;
     padding-top: 10rem;
     .container {
         padding-top: 60px;
@@ -66,3 +66,22 @@
         }
       }
   }
+.Meteorology{
+
+@include flex(center,center);
+flex-direction: column;
+color: #131212;
+font-size: 2.2em;
+font-weight: bold;
+background: #66616169;
+margin-bottom: 3rem;
+.city{
+  color: #ffd900;
+  font-size: 1.4em;
+  font-weight: bold;
+}
+.weather{
+  color: #620909;
+}
+
+}

@@ -211,7 +211,7 @@ nav .section-right button i {
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
-  height: 70rem;
+  height: 74rem;
   padding-top: 10rem;
 }
 .bookTicket .container {
@@ -244,4 +244,24 @@ nav .section-right button i {
   text-align: center;
   padding-top: 10px;
   padding-bottom: 10px;
+}
+
+.Meteorology {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: #131212;
+  font-size: 2.2em;
+  font-weight: bold;
+  background: rgba(102, 97, 97, 0.4117647059);
+  margin-bottom: 3rem;
+}
+.Meteorology .city {
+  color: #ffd900;
+  font-size: 1.4em;
+  font-weight: bold;
+}
+.Meteorology .weather {
+  color: #620909;
 }/*# sourceMappingURL=bookTicket.css.map */

@@ -1,23 +1,23 @@
 
-var mydata=[];
+// var mydata=[];
 
-  function loadData() {
-
-    var xhttp = new XMLHttpRequest();
-     xhttp.open("GET", "../json/myJson.json");
-    xhttp.onreadystatechange = function () {
-       if ( xhttp.readyState == 4 && xhttp.status == 200) {
-            var jsObject = JSON.parse(xhttp.responseText);
-            mydata = jsObject;
+//   function loadData() {
+// fetch('../json/myJson.json').then(res=>(res.json)).then(data=>mydata=data)
+//     // var xhttp = new XMLHttpRequest();
+//     //  xhttp.open("GET", );
+//     // xhttp.onreadystatechange = function () {
+//     //    if ( xhttp.readyState == 4 && xhttp.status == 200) {
+//     //         var jsObject = JSON.parse(xhttp.responseText);
+//     //         mydata = jsObject;
             
-        }
-    };
+//     //     }
+//     // };
 
-     xhttp.send();
-}
+//     //  xhttp.send();
+// }
 
- console.log(mydata)
-loadData();
+//  console.log(mydata)
+// loadData();
 
 
 
