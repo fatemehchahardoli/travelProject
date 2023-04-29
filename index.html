@@ -1,346 +1,435 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="auther" content="fatemehChahardoli">
-    <meta name="keyword" content="travel ">
-    <meta name="description" content="travel">
-    <meta name="roboot" content="follow index">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="css/main.css" rel="stylesheet">
-    <link rel="icon" href="images/favicon.svg" type="image/png" sizes="128x128">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <meta name="auther" content="fatemehChahardoli" />
+      <meta name="keyword" content="travel " />
+      <meta name="description" content="travel" />
+      <meta name="roboot" content="follow index" />
+      <link
+         rel="stylesheet"
+         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+      />
+      <link href="css/main.css" rel="stylesheet" />
+      <link
+         rel="icon"
+         href="images/favicon.svg"
+         type="image/png"
+         sizes="128x128"
+      />
       <!-- 
     - google font link
   -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Comforter+Brush&family=Heebo:wght@400;500;600;700&display=swap"
-    rel="stylesheet">
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link
+         href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Comforter+Brush&family=Heebo:wght@400;500;600;700&display=swap"
+         rel="stylesheet"
+      />
 
-    <title>travel</title>
-</head>
+      <title>travel</title>
+   </head>
 
-<body>
-<!-- preloader -->
-<div class="loader">
-    <img src="images/loading.gif" alt="Loading..." />
-  </div>
-<!-- end preloader -->
+   <body>
+      <!-- preloader -->
+      <div class="loader">
+         <img src="images/loading.gif" alt="Loading..." />
+      </div>
+      <!-- end preloader -->
 
+      <!-- navbar -->
+      <div class="container-fluid" id="navbar">
+         <nav>
+            <div class="section-left">
+               <img src="images/logo.png" alt="logo" title="travel-Logo" />
+            </div>
+            <div class="section-right">
+               <ul>
+                  <li><a href="#"> Home</a></li>
+                  <!-- <li><a href="pages/events_page.html"> Events</a></li> -->
+                  <li><a href="pages/about.html"> About</a></li>
+                  <li><a href="pages/bookTicket.html"> Book aTicket</a></li>
+                  <li><a href="pages/contact.html"> Content</a></li>
+                  <li><i class="fa fa-search" id="search"> </i></li>
+               </ul>
 
-
-
-
-    <!-- navbar -->
-    <div class="container-fluid" id="navbar" >
-       
-            <nav>
-                <div class="section-left">
-                    <img src="images/logo.png" alt="logo" title="travel-Logo">
-                </div>
-                <div class="section-right">
-                    <ul>
-                      
-                        <li><a href="#"> Home</a></li>
-                        <!-- <li><a href="pages/events_page.html"> Events</a></li> -->
-                        <li><a href="pages/about.html"> About</a></li>
-                        <li><a href="pages/bookTicket.html"> Book aTicket</a></li>
-                        <li><a href="pages/contact.html"> Content</a></li>
-                        <li><i class=" fa fa-search" id="search"> </i></li>
-                    </ul>
-
-                    <button type="button"><i class="fa fa-phone"></i>+10-36674665</button>
-                </div>
-            </nav>
-       <div class="search-form" style="display:none;" >
-        <div id="close-search" class=" fa fa-times"></div>
-        <form action="">
-            <input type="search" name="" placeholder="search here..." id="search-box">
-            <label for="search-box" class="fa fa-search" id="lable-search"></label>
-        </form>
-
-       </div>
-    </div>
-    <!-- end navbar-->
-    <div id="scroll"></div>
-    <!-- main -->
-    <div class="container-fluid">
-        <main>
-         
+               <button type="button">
+                  <i class="fa fa-phone"></i>+10-36674665
+               </button>
+            </div>
+         </nav>
+         <div class="search-form" style="display: none">
+            <div id="close-search" class="fa fa-times"></div>
+            <form action="">
+               <input
+                  type="search"
+                  name=""
+                  placeholder="search here..."
+                  id="search-box"
+               />
+               <label
+                  for="search-box"
+                  class="fa fa-search"
+                  id="lable-search"
+               ></label>
+            </form>
+         </div>
+      </div>
+      <!-- end navbar-->
+      <div id="scroll"></div>
+      <!-- main -->
+      <div class="container-fluid">
+         <main>
             <div>
-                <h1>Lifelong memories just a<dd> few seconds away</dd>
-                </h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, ea.</p>
-                <button type="button" class="header-btn">Exploredestinations</button>
+               <h1>
+                  Lifelong memories just a
+                  <dd>few seconds away</dd>
+               </h1>
+               <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Accusantium, ea.
+               </p>
+               <button type="button" class="header-btn">
+                  Exploredestinations
+               </button>
             </div>
-       
+
             <div class="header-img">
-                <img src="images/shape-1.png" class="animation-shape ">
-                <img src="images/shape-2.png" class="animation-shape shape-1">
-                <img src="images/shape-3.png" class="animation-shape shape-2">
+               <img src="images/shape-1.png" class="animation-shape" />
+               <img src="images/shape-2.png" class="animation-shape shape-1" />
+               <img src="images/shape-3.png" class="animation-shape shape-2" />
             </div>
-        </main>
-    </div>
+         </main>
+      </div>
 
-
-
-    <!-- end main -->
-    <!-- section -->
-    <section>
-        <div class="container-fluid">
+      <!-- end main -->
+      <!-- section -->
+      <section>
+         <div class="container-fluid">
             <a href="#">Check Our Best Promotional Tour</a>
             <h2>Upcoming Events</h2>
             <div class="main">
-                <div class="boxes">
-                    <div class="box">
-                        <img src="images/popular-2.jpg" alt="" class="box-content-img">
-                        <div class="box-content-text">
-                            <span>MegaTurkey</span>
-                            <span>$1200</span>
-                        </div>
-                        <div class="box-content-date">
-                            <a>12jan-18jan</a>
-                            <span>5day</span>
-                        </div>
-                    </div>
-                    <!-- box2 -->
-                    <div class="box">
-                        <img src="images/popular-3.jpg" alt="" class="box-content-img">
-                        <div class="box-content-text">
-                            <span>MegaTurkey</span>
-                            <span>$1200</span>
-                        </div>
-                        <div class="box-content-date">
-                            <a>12jan-18jan</a>
-                            <span>5day</span>
-                        </div>
-                    </div>
-                    <!-- box3 -->
-                    <div class="box">
-                        <img src="images/blog-3.jpg" alt="" class="box-content-img">
-                        <div class="box-content-text">
-                            <span>MegaTurkey</span>
-                            <span>$1200</span>
-                        </div>
-                        <div class="box-content-date">
-                            <a>12jan-18jan</a>
-                            <span>5day</span>
-                        </div>
-                    </div>
-                </div>
+               <div class="boxes">
+                  <div class="box">
+                     <img
+                        src="images/popular-2.jpg"
+                        alt=""
+                        class="box-content-img"
+                     />
+                     <div class="box-content-text">
+                        <span>MegaTurkey</span>
+                        <span>$1200</span>
+                     </div>
+                     <div class="box-content-date">
+                        <a>12jan-18jan</a>
+                        <span>5day</span>
+                     </div>
+                  </div>
+                  <!-- box2 -->
+                  <div class="box">
+                     <img
+                        src="images/popular-3.jpg"
+                        alt=""
+                        class="box-content-img"
+                     />
+                     <div class="box-content-text">
+                        <span>MegaTurkey</span>
+                        <span>$1200</span>
+                     </div>
+                     <div class="box-content-date">
+                        <a>12jan-18jan</a>
+                        <span>5day</span>
+                     </div>
+                  </div>
+                  <!-- box3 -->
+                  <div class="box">
+                     <img
+                        src="images/blog-3.jpg"
+                        alt=""
+                        class="box-content-img"
+                     />
+                     <div class="box-content-text">
+                        <span>MegaTurkey</span>
+                        <span>$1200</span>
+                     </div>
+                     <div class="box-content-date">
+                        <a>12jan-18jan</a>
+                        <span>5day</span>
+                     </div>
+                  </div>
+               </div>
             </div>
-        </div>
-    </section>
-    <!-- end section -->
+         </div>
+      </section>
+      <!-- end section -->
 
-    <!-- About Us -->
-    <section>
-        <div class="container-fluid">
+      <!-- About Us -->
+      <section>
+         <div class="container-fluid">
             <div class="container">
-                <div class="about">
-                    <div class="about_img" id="aboutImg"></div>
-                    <div class="about_text">
-                        <span>About Us</span>
-                        <h2>Get ready for real time adventure</h2>
-                        <p>Let’s start your journey with us, your dream will come true. Lorem ipsum dolor sit amet,
-                            consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-                            aliqua.
-                            Ut enim ad minim veniam quis nostrud exercitation.
-                        </p>
+               <div class="about">
+                  <div class="about_img" id="aboutImg"></div>
+                  <div class="about_text">
+                     <span>About Us</span>
+                     <h2>Get ready for real time adventure</h2>
+                     <p>
+                        Let’s start your journey with us, your dream will come
+                        true. Lorem ipsum dolor sit amet, consectetur
+                        adipisicing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Ut enim ad minim veniam
+                        quis nostrud exercitation.
+                     </p>
 
-                        <button type="button" class="header-btn">book your destintion</button>
-                    </div>
-                </div>
+                     <button type="button" class="header-btn">
+                        book your destintion
+                     </button>
+                  </div>
+               </div>
             </div>
-        </div>
-    </section>
-    <!-- end About Us -->
+         </div>
+      </section>
+      <!-- end About Us -->
 
-    <!-- section -->
-    <section>
-        <div class="container-fluid">
+      <!-- section -->
+      <section>
+         <div class="container-fluid">
             <div class="bg">
-                <div class="content">
-                    <h2> what customet say?</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus voluptatum suscipit unde, veniam
-                        voluptates autem expedita nostrum, temporibus porro dolorum, quis repudiandae tempore magnam
-                        ipsa odit? Autem cupiditate minus rerum?
+               <div class="content">
+                  <h2>what customet say?</h2>
+                  <p>
+                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                     Ducimus voluptatum suscipit unde, veniam voluptates autem
+                     expedita nostrum, temporibus porro dolorum, quis
+                     repudiandae tempore magnam ipsa odit? Autem cupiditate
+                     minus rerum?
+                  </p>
 
-                    <div class="info">
-                        <img src="images/founder-img.png" alt="">
-                        <div>
-                            <p>mark anthony</p>
-                            <p>CEO of lorem</p>
-                        </div>
-                    </div>
-                </div>
+                  <div class="info">
+                     <img src="images/founder-img.png" alt="" />
+                     <div>
+                        <p>mark anthony</p>
+                        <p>CEO of lorem</p>
+                     </div>
+                  </div>
+               </div>
             </div>
-        </div>
-    </section>
-    <!--end section -->
+         </div>
+      </section>
+      <!--end section -->
 
-    <!-- FAQ -->
-    <section>
-        <div class="container-fluid">
+      <!-- FAQ -->
+      <section>
+         <div class="container-fluid">
             <span>FAQ</span>
-        </div>
-        <div class="FAQ">
+         </div>
+         <div class="FAQ">
             <div class="FAQ_text">
-                <h2>Full range of travel service</h2>
+               <h2>Full range of travel service</h2>
             </div>
 
             <div class="FAQ_content_accordion">
-                <div class="container">
-                    <div class="wrapper ">
-                        <button class="toggle">
-                            Starts the automated process.
+               <div class="container">
+                  <div class="wrapper">
+                     <button class="toggle">
+                        Starts the automated process.
 
-                            <i class="fa fa-plus icon"></i>
-                        </button>
-                        <div class="content ">
-                            <p>The automated process starts as soon as your clothes go into the machine. Duis cursus, mi quis viverra ornare.</p>
-                        </div>
-                    </div>
-                    <div class="wrapper">
-                        <button class="toggle">
-                            The automated process starts.
-                            <i class="fa fa-plus icon"></i>
-                        </button>
-                        <div class="content">
-                            <p>The automated process starts as soon as your clothes go into the machine. Duis cursus, mi quis viverra ornare.</p>
-                        </div>
-                    </div>
-                    <div class="wrapper">
-                        <button class="toggle">
-                            The automated process starts.
-                            <i class="fa fa-plus icon"></i>
-                        </button>
-                        <div class="content">
-                            <p>The automated process starts as soon as your clothes go into the machine. Duis cursus, mi quis viverra ornare.</p>
-                        </div>
-                    </div>
-                </div>
+                        <i class="fa fa-plus icon"></i>
+                     </button>
+                     <div class="content">
+                        <p>
+                           The automated process starts as soon as your clothes
+                           go into the machine. Duis cursus, mi quis viverra
+                           ornare.
+                        </p>
+                     </div>
+                  </div>
+                  <div class="wrapper">
+                     <button class="toggle">
+                        The automated process starts.
+                        <i class="fa fa-plus icon"></i>
+                     </button>
+                     <div class="content">
+                        <p>
+                           The automated process starts as soon as your clothes
+                           go into the machine. Duis cursus, mi quis viverra
+                           ornare.
+                        </p>
+                     </div>
+                  </div>
+                  <div class="wrapper">
+                     <button class="toggle">
+                        The automated process starts.
+                        <i class="fa fa-plus icon"></i>
+                     </button>
+                     <div class="content">
+                        <p>
+                           The automated process starts as soon as your clothes
+                           go into the machine. Duis cursus, mi quis viverra
+                           ornare.
+                        </p>
+                     </div>
+                  </div>
+               </div>
             </div>
             <div class="FAQ_content_bg"></div>
 
             <div class="FAQ_btn">
-                <button type="button">book your destintion</button>
+               <button type="button">book your destintion</button>
             </div>
-
-        </div>
-    </section>
-    <!--end FAQ -->
-    <!-- timer -->
-    <section class="timer">
-        <div class="img-Discount">
-            <img src="images/travel-sale-banner-yellow-tag-260nw-1750129319 (1).webp">
-        </div>
-        <div class="wrapper">
-      
-          <div id="countdown">
-            <div class="cd-box">
-              <p class="numbers days" id="day">00</p><br>
-              <p class="strings timeRefDays">Days</p>
-            </div>
-            <div class="cd-box">
-              <p class="numbers hours" id="hours">00</p><br>
-              <p class="strings timeRefHours">Hours</p>
-            </div>
-            <div class="cd-box">
-              <p class="numbers minutes" id="minute">00</p><br>
-              <p class="strings timeRefMinutes">Minutes</p>
-            </div>
-            <div class="cd-box">
-              <p class="numbers seconds" id="second">00</p><br>
-              <p class="strings timeRefSeconds">Seconds</p>
-            </div>
-          </div>
-          <!-- end div#countdown -->
-      
-    
-      
-        </div>
-        <!-- end div.wrapper -->
+         </div>
       </section>
-    <!--end timer -->
-
-    <!-- instagram gallery -->
-    <div class="container-fluid images">
-        <div class="box-insta">
-            <div><img src="images/instra1.jpg" width="100%" height="100%" alt=""></div>
-            <div><img src="images/instra2.jpg" width="100%" height="100%" alt=""></div>
-            <div><img src="images/instra3.jpg" width="100%" height="100%" alt=""></div>
-            <div><img src="images/instra4.jpg" width="100%" height="100%" alt=""></div>
-            <div><img src="images/instra5.jpg" width="100%" height="100%" alt=""></div>
-        </div>
-    </div>
-    <!-- end instagram gallery -->
-    <!-- footer -->
-    <footer>
-        <div class="container-fluid">
-            <div class="container">
-                <div id="footer">
-                    <div>
-                        <img src="images/logo2_footer.png" alt="">
-                        <p>Land behold it created good saw after she'd Our set living. Signs midst dominion creepeth
-                            morning laboris nisi ufsit aliquip.</p>
-                        <div class="icons">
-                            <ul>
-                                <li><i class="fa fa-twitter"></i></li>
-                                <li><i class="fa fa-facebook"></i></li>
-                                <li><i class="fa fa-linkedin "></i></li>
-                                <li><i class="fa fa-pinterest-square"></i></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div>
-                        <h5>Navigation</h5>
-                        <ul>
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#">About</a></li>
-                            <li><a href="#">Services</a></li>
-                            <li><a href="#">Blog</a></li>
-                            <li><a href="#">Contact</a></li>
-                        </ul>
-                    </div>
-                    <div>
-                        <h5>Services</h5>
-                        <ul>
-                            <li><a href="#">Blackforest</a></li>
-                            <li><a href="#">Bodhubon</a></li>
-                            <li><a href="#">Rongdhonu</a></li>
-                            <li><a href="#">Meghrong</a></li>
-                        </ul>
-                    </div>
-                    <div>
-                        <h5>Contact Us</h5>
-                        <ul>
-                            <li><a href="#">76/A, Green Lane, Dhanmondi, NYC</a></li>
-                            <li><a href="#">demomail89@gmail.com</a></li>
-                            <li><a href="#">+10 (78) 738-9083</a></li>
-                        </ul>
-                    </div>
-
-                </div>
-                <div class="copyright">
-                    <p >Copyright ©2022 All rights reserved | This template is made with by <span>fatemeh chahardoli</span></p>
-                </div>
+      <!--end FAQ -->
+      <!-- timer -->
+      <section class="timer">
+         <div class="img-Discount">
+            <img
+               src="images/travel-sale-banner-yellow-tag-260nw-1750129319 (1).webp"
+            />
+         </div>
+         <div class="wrapper">
+            <div id="countdown">
+               <div class="cd-box">
+                  <p class="numbers days" id="day">00</p>
+                  <br />
+                  <p class="strings timeRefDays">Days</p>
+               </div>
+               <div class="cd-box">
+                  <p class="numbers hours" id="hours">00</p>
+                  <br />
+                  <p class="strings timeRefHours">Hours</p>
+               </div>
+               <div class="cd-box">
+                  <p class="numbers minutes" id="minute">00</p>
+                  <br />
+                  <p class="strings timeRefMinutes">Minutes</p>
+               </div>
+               <div class="cd-box">
+                  <p class="numbers seconds" id="second">00</p>
+                  <br />
+                  <p class="strings timeRefSeconds">Seconds</p>
+               </div>
             </div>
-        </div>
-    </footer>
-    <!-- end footer -->
+            <!-- end div#countdown -->
+         </div>
+         <!-- end div.wrapper -->
+      </section>
+      <!--end timer -->
 
+      <!-- instagram gallery -->
+      <div class="container-fluid images">
+         <div class="box-insta">
+            <div>
+               <img
+                  src="images/instra1.jpg"
+                  width="100%"
+                  height="100%"
+                  alt=""
+               />
+            </div>
+            <div>
+               <img
+                  src="images/instra2.jpg"
+                  width="100%"
+                  height="100%"
+                  alt=""
+               />
+            </div>
+            <div>
+               <img
+                  src="images/instra3.jpg"
+                  width="100%"
+                  height="100%"
+                  alt=""
+               />
+            </div>
+            <div>
+               <img
+                  src="images/instra4.jpg"
+                  width="100%"
+                  height="100%"
+                  alt=""
+               />
+            </div>
+            <div>
+               <img
+                  src="images/instra5.jpg"
+                  width="100%"
+                  height="100%"
+                  alt=""
+               />
+            </div>
+         </div>
+      </div>
+      <!-- end instagram gallery -->
+      <!-- footer -->
+      <footer>
+         <div class="container-fluid">
+            <div class="container">
+               <div id="footer">
+                  <div>
+                     <img src="images/logo2_footer.png" alt="" />
+                     <p>
+                        Land behold it created good saw after she'd Our set
+                        living. Signs midst dominion creepeth morning laboris
+                        nisi ufsit aliquip.
+                     </p>
+                     <div class="icons">
+                        <ul>
+                           <li><i class="fa fa-twitter"></i></li>
+                           <li><i class="fa fa-facebook"></i></li>
+                           <li><i class="fa fa-linkedin"></i></li>
+                           <li><i class="fa fa-pinterest-square"></i></li>
+                        </ul>
+                     </div>
+                  </div>
+                  <div>
+                     <h5>Navigation</h5>
+                     <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Contact</a></li>
+                     </ul>
+                  </div>
+                  <div>
+                     <h5>Services</h5>
+                     <ul>
+                        <li><a href="#">Blackforest</a></li>
+                        <li><a href="#">Bodhubon</a></li>
+                        <li><a href="#">Rongdhonu</a></li>
+                        <li><a href="#">Meghrong</a></li>
+                     </ul>
+                  </div>
+                  <div>
+                     <h5>Contact Us</h5>
+                     <ul>
+                        <li>
+                           <a href="#">76/A, Green Lane, Dhanmondi, NYC</a>
+                        </li>
+                        <li><a href="#">demomail89@gmail.com</a></li>
+                        <li><a href="#">+10 (78) 738-9083</a></li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="copyright">
+                  <p>
+                     Copyright ©2022 All rights reserved | This template is made
+                     with by <span>fatemeh chahardoli</span>
+                  </p>
+               </div>
+            </div>
+         </div>
+      </footer>
+      <!-- end footer -->
 
-
-
-
-
-    <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
-    <script src="js/main.js"></script>
-</body>
-
+      <script
+         src="https://code.jquery.com/jquery-3.6.4.min.js"
+         integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8="
+         crossorigin="anonymous"
+      ></script>
+      <script src="js/main.js"></script>
+   </body>
 </html>
