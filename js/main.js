@@ -22,9 +22,33 @@ async function loaddata() {
    var mydata = await fetch("../json/myJson.json")
       .then((res) => res.json())
       .then((res) => res.toorInfo);
-   console.log(mydata);
+   creatBoxEvent(mydata);
 }
 loaddata();
+
+let boxes = document.querySelector(".boxes");
+function creatBoxEvent(data) {
+   data.forEach((toor) => {
+      boxes.insertAdjacentHTML(
+         "beforeend",
+         `  <div class="box">
+     <img
+        src=${toor.image}
+        alt=""
+        class="box-content-img"
+     />
+     <div class="box-content-text">
+        <span>${toor.name}</span>
+        <span>$${toor.price}</span>
+     </div>
+     <div class="box-content-date">
+        <a>${toor.TicketType}</a>
+        <span>${toor.Capacity}</span>
+     </div>
+     </div>`
+      );
+   });
+}
 
 // function loadData() {
 //     var xhttp = new XMLHttpRequest();
