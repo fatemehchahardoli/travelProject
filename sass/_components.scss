@@ -2,137 +2,193 @@
 @import "_general";
 
 #navbar {
-  position: sticky;
-  top: 0;
-  z-index: 3;
-
+   position: sticky;
+   top: 0;
+   z-index: 3;
 }
 
 nav {
- 
-  padding: 10px 2rem;
-  @include grid(repeat(2, 1fr), 70px, end, center);
-  grid-template-columns: .5fr 1.5fr;
-  font-family: 'Heebo', sans-serif;
-  font-size: 1.2em;
-  background-color: white;
-  z-index: 999;
+   padding: 10px 2rem;
+   @include grid(repeat(2, 1fr), 70px, end, center);
+   grid-template-columns: 0.5fr 1.5fr;
+   font-family: "Heebo", sans-serif;
+   font-size: 1.2em;
+   background-color: white;
+   z-index: 999;
 
-  .section-left {
-    height: 100%;
-    padding-left: 5rem;
+   .section-left {
+      height: 100%;
+      padding-left: 5rem;
+   }
 
-  }
+   .section-right {
+      display: flex;
+      justify-content: end;
+      align-items: center;
+      height: 100%;
 
-  .section-right {
+      ul {
+         li {
+            display: inline-block;
+            transition: all 0.2s;
+            margin-left: 21px;
+            &:hover {
+               background-color: #ffc800;
+               padding: 20px;
+            }
 
-    display: flex;
-    justify-content: end;
-    align-items: center;
-    height: 100%;
+            a {
+               text-decoration: none;
+               margin: 20px;
+               color: $color-dark;
+            }
 
-    ul {
-      li {
-        display: inline-block;
-        
-        transition: all .2s;
-
-        &:hover {
-          background-color:#ffc800;
-          padding: 20px;
-        }
-
-        a {
-          text-decoration: none;
-          margin: 20px;
-          color: $color-dark;
-
-
-        }
-
-        i:hover ul li {
-          display: block;
-
-        }
+            i:hover ul li {
+               display: block;
+            }
+         }
       }
-    }
 
-    button {
-      width: 210px;
-      height: 52px;
-      color: $color-light;
-      background-color: $bg-btn;
-      border: none;
-      font-weight: 700;
-      border-radius: 5px;
-      font-size: 14px;
-      margin-left: 30px;
-      cursor: pointer;
-      @include flex(center, center);
+      button {
+         width: 210px;
+         height: 52px;
+         color: $color-light;
+         background-color: $bg-btn;
+         border: none;
+         font-weight: 700;
+         border-radius: 5px;
+         font-size: 14px;
+         margin-left: 30px;
+         cursor: pointer;
+         @include flex(center, center);
 
-      i {
-        font-size: 20px;
-        margin-top: 3px;
+         i {
+            font-size: 20px;
+            margin-top: 3px;
+         }
       }
-    }
-
-  }
+   }
 }
 
 @mixin style-btn($color, $bg) {
-  width: 15rem;
-  height: 4rem;
-  margin-top: 30px;
-  color: $color;
-  background-color: $bg;
-  border: none;
-  border-radius: 5px;
-  font-size: 14px;
-  font-weight: 700;
+   width: 15rem;
+   height: 4rem;
+   margin-top: 30px;
+   color: $color;
+   background-color: $bg;
+   border: none;
+   border-radius: 5px;
+   font-size: 14px;
+   font-weight: 700;
 }
 
 .FAQ_content_accordion {
-  .active {
-    height: auto;
-    color: red;
-  }
+   .active {
+      height: auto;
+      color: red;
+   }
 
-  .wrapper {
-    background-color: #ffffff;
-    margin-bottom: 20px;
-    padding: 15px 40px;
-    border-radius: 5px;
-    box-shadow: 0 15px 25px rgba(0, 0, 50, 0.2);
-  }
+   .wrapper {
+      background-color: #ffffff;
+      margin-bottom: 20px;
+      padding: 15px 40px;
+      border-radius: 5px;
+      box-shadow: 0 15px 25px rgba(0, 0, 50, 0.2);
+   }
 
-  .toggle,
-  .content {
-    font-family: "Poppins", sans-serif;
-  }
+   .toggle,
+   .content {
+      font-family: "Poppins", sans-serif;
+   }
 
-  .toggle {
-    width: 100%;
-    background-color: transparent;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    font-size: 16px;
-    color: #111130;
-    font-weight: 500;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    padding: 15px 0;
-  }
+   .toggle {
+      width: 100%;
+      background-color: transparent;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-size: 16px;
+      color: #111130;
+      font-weight: 500;
+      border: none;
+      outline: none;
+      cursor: pointer;
+      padding: 15px 0;
+   }
 
-  .content {
-    position: relative;
-    font-size: 14px;
-    text-align: justify;
-    line-height: 30px;
-    height: 0;
-    overflow: hidden;
-    transition: all 1s;
-  }
+   .content {
+      position: relative;
+      font-size: 14px;
+      text-align: justify;
+      line-height: 30px;
+      height: 0;
+      overflow: hidden;
+      transition: all 1s;
+   }
+}
 
+@media only screen and (max-width: 600px) {
+   nav {
+      padding: 10px 2rem;
+      @include grid(repeat(2, 1fr), 70px, end, center);
+      grid-template-columns: 0.5fr 1.5fr;
+      font-family: "Heebo", sans-serif;
+      font-size: 1.2em;
+      background-color: white;
+      z-index: 999;
+
+      .section-left {
+         height: 100%;
+         padding-left: 5rem;
+      }
+
+      .section-right {
+         display: flex;
+         justify-content: end;
+         align-items: center;
+         height: 100%;
+
+         ul {
+            li {
+               display: inline-block;
+
+               transition: all 0.2s;
+
+               &:hover {
+                  background-color: #ffc800;
+                  padding: 20px;
+               }
+
+               a {
+                  text-decoration: none;
+                  margin: 20px;
+                  color: $color-dark;
+               }
+
+               i:hover ul li {
+                  display: block;
+               }
+            }
+         }
+
+         button {
+            width: 210px;
+            height: 52px;
+            color: $color-light;
+            background-color: $bg-btn;
+            border: none;
+            font-weight: 700;
+            border-radius: 5px;
+            font-size: 14px;
+            margin-left: 30px;
+            cursor: pointer;
+            @include flex(center, center);
+
+            i {
+               font-size: 20px;
+               margin-top: 3px;
+            }
+         }
+      }
+   }
 }

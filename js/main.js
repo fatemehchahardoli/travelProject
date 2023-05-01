@@ -42,29 +42,13 @@ function creatBoxEvent(data) {
         <span>$${toor.price}</span>
      </div>
      <div class="box-content-date">
-        <a>${toor.TicketType}</a>
-        <span>${toor.Capacity}</span>
+        <a>${toor.TicketType}</a><br>
+        <span style="color:red">Capacity:${toor.Capacity}</span>
      </div>
      </div>`
       );
    });
 }
-
-// function loadData() {
-//     var xhttp = new XMLHttpRequest();
-//      xhttp.open("GET", "../json/myJson.json");
-//     xhttp.onreadystatechange = function() {
-//         if (xhttp.readyState == 4 && xhttp.status == 200) {
-//             var jsObject = JSON.parse(xhttp.responseText);
-//             mydata = jsObject;
-//           creats(mydata)
-
-//         }
-//     };
-
-//     xhttp.send();
-// }
-//----------------------------------------------------------------
 
 function creats(data) {
    console.log(data);
