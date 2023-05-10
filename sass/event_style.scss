@@ -2,13 +2,11 @@
 @import "general";
 @import "layouts";
 
-
-.event{
-    background-image: url('../images/download\ \(1\).jfif');
-    background-size: 100% 100%;
-   @include flex(center,center);
-    color:$color-light;
-    height: 25rem;
-    font-size: 2.2em;
-    
+.event {
+   background-image: url("../images/download\ \(1\).jfif");
+   background-size: 100% 100%;
+   @include flex(center, center);
+   color: $color-light;
+   height: 25rem;
+   font-size: 2.2em;
 }

@@ -37,13 +37,13 @@ function creatBoxEvent(data) {
         alt=""
         class="box-content-img"
      />
-     <div class="box-content-text">
-        <span>${toor.name}</span>
-        <span>$${toor.price}</span>
+     <div class="box-content-text"  style="display: flex;justify-content:space-around;">
+        <span style="color: #000a5d; font-size:1.4em">${toor.name}</span><br>
+        <span style="color: #6fa1ff;font-size:1.2em" >$${toor.price}</span>
      </div>
      <div class="box-content-date">
         <a>${toor.TicketType}</a><br>
-        <span style="color:red">Capacity:${toor.Capacity}</span>
+    
      </div>
      </div>`
       );

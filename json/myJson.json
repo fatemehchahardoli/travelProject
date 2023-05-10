@@ -7,7 +7,7 @@
          "travelType": "خارجی",
          "Capacity": 13,
          "TicketType": "هواپیما",
-         "image": "../images/instra4.jpg"
+         "image": "../images/antalia.jpg"
       },
       {
          "toorCode": 2,
@@ -16,7 +16,7 @@
          "travelType": "خارجی",
          "Capacity": 13,
          "TicketType": "هواپیما",
-         "image": "../images/instra4.jpg"
+         "image": "../images/dd.jfif"
       },
       {
          "toorCode": 3,
@@ -25,7 +25,7 @@
          "travelType": "داخلی",
          "Capacity": 13,
          "TicketType": "قطار",
-         "image": "../images/instra4.jpg"
+         "image": "../images/mashhad.webp"
       },
       {
          "toorCode": 4,
@@ -34,7 +34,7 @@
          "travelType": "خارجی",
          "Capacity": 13,
          "TicketType": "هواپیما",
-         "image": "../images/instra4.jpg"
+         "image": "../images/amrika.webp"
       },
       {
          "toorCode": 5,
@@ -43,7 +43,7 @@
          "travelType": "داخلی",
          "Capacity": 13,
          "TicketType": "اتوبوس",
-         "image": "../images/instra4.jpg"
+         "image": "../images/shiraz.webp"
       },
       {
          "toorCode": 6,
@@ -52,7 +52,7 @@
          "travelType": "داخلی",
          "Capacity": 13,
          "TicketType": "اتوبوس",
-         "image": "../images/instra4.jpg"
+         "image": "../images/hamedan.webp"
       },
       {
          "toorCode": 1,
@@ -61,7 +61,7 @@
          "travelType": "خارجی",
          "Capacity": 13,
          "TicketType": "هواپیما",
-         "image": "../images/instra4.jpg"
+         "image": "../images/air.jpg"
       },
       {
          "toorCode": 1,
@@ -70,7 +70,7 @@
          "travelType": "خارجی",
          "Capacity": 13,
          "TicketType": "هواپیما",
-         "image": "../images/instra4.jpg"
+         "image": "../images/doby.webp"
       },
       {
          "toorCode": 1,
@@ -79,7 +79,7 @@
          "travelType": "داخلی",
          "Capacity": 13,
          "TicketType": "کشتی",
-         "image": "../images/instra4.jpg"
+         "image": "../images/kish.jpg"
       }
    ]
 }
