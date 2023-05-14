@@ -1,8 +1,7 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
 }
 
 $color-dark: black;
@@ -12,39 +11,36 @@ $color-h1: #00095e;
 $bg-footer: #020a54;
 $color-main: #7d81a5;
 $color-boxShadow: #ddd;
-$border-color:#d2cccc;
-.list-style-none{
-    list-style: none;
+$border-color: #d2cccc;
+.list-style-none {
+   list-style: none;
 }
 .container-fluid {
-    width: 100%;
-    margin: 0;
+   width: 100%;
+   margin: 0;
 }
 
 .container {
-    width: 90%;
-    margin: 0 auto;
+   width: 90%;
+   margin: 0 auto;
 }
 
 .container-70 {
-    width: 70%;
-    margin: 0 auto;
+   width: 70%;
+   margin: 0 auto;
 }
-.input{
-    width: 49%;
-    height: 50px;
-    border-radius: 5px;
-    margin-right: 6px;
-    padding-left: 10px;
-    border: 1px solid $border-color;
-
-
-   
+.input {
+   width: 49%;
+   height: 50px;
+   border-radius: 5px;
+   margin-right: 6px;
+   padding-left: 10px;
+   border: 1px solid $border-color;
 }
- .m-t{
-       margin-top: 1rem; 
-    }
+.m-t {
+   margin-top: 1rem;
+}
 @mixin style-a($color) {
-    text-decoration: none;
-    color: $color;
+   text-decoration: none;
+   color: $color;
 }

@@ -130,15 +130,15 @@ main {
       }
    }
 
-   button {
-      @include style-btn($color-light, $bg-btn);
-      margin-left: 7rem;
-      z-index: 1;
-      transition: all 0.3s;
-      &:hover {
-         background-color: $bg-footer;
-      }
-   }
+   // button {
+   //    @include style-btn($color-light, $bg-btn);
+   //    margin-left: 7rem;
+   //    z-index: 1;
+   //    transition: all 0.3s;
+   //    &:hover {
+   //       background-color: $bg-footer;
+   //    }
+   // }
 
    .header-img {
       background-image: url("../images/hero-banner.png");
@@ -194,14 +194,137 @@ section {
 
          .box {
             box-shadow: 2px 6px 20px $color-boxShadow;
+            .con-like {
+               --red: #ee427b;
+               position: relative;
+               width: 50px;
+               height: 50px;
+            }
 
+            .con-like .like {
+               position: absolute;
+               width: 100%;
+               height: 100%;
+               opacity: 0;
+               z-index: 20;
+               cursor: pointer;
+            }
+
+            .con-like .checkmark {
+               width: 100%;
+               height: 100%;
+               display: flex;
+               justify-content: center;
+               align-items: center;
+            }
+
+            .con-like .outline,
+            .con-like .filled {
+               fill: var(--red);
+               position: absolute;
+               width: 23px;
+            }
+
+            .con-like .filled {
+               animation: kfr-filled 0.5s;
+               display: none;
+            }
+
+            .con-like .celebrate {
+               position: absolute;
+               animation: kfr-celebrate 0.5s;
+               animation-fill-mode: forwards;
+               display: none;
+            }
+
+            .con-like .poly {
+               stroke: var(--red);
+               fill: var(--red);
+            }
+
+            .con-like .like:checked ~ .checkmark .filled {
+               display: block;
+            }
+
+            .con-like .like:checked ~ .checkmark .celebrate {
+               display: block;
+            }
+
+            @keyframes kfr-filled {
+               0% {
+                  opacity: 0;
+                  transform: scale(0);
+               }
+
+               50% {
+                  opacity: 1;
+                  transform: scale(1.2);
+               }
+            }
+
+            @keyframes kfr-celebrate {
+               0% {
+                  transform: scale(0);
+               }
+
+               50% {
+                  opacity: 0.8;
+               }
+
+               100% {
+                  transform: scale(1.2);
+                  opacity: 0;
+                  display: none;
+               }
+            }
             img {
                width: 28rem;
             }
             &:hover {
                box-shadow: 2px 6px 20px gray;
+               border: 1px solid rgb(105, 103, 103);
+               border-radius: 10px;
+               img {
+                  border-radius: 10px;
+               }
             }
          }
+      }
+   }
+   .pagination {
+      display: flex;
+      width: 40%;
+      margin: 40px 32rem;
+      li {
+         margin: 5px;
+         box-shadow: 0 5px 25px rgb(94, 92, 92);
+         border-radius: 30px;
+         list-style: none;
+         a {
+            color: black;
+            text-decoration: none;
+            font-size: 1.2em;
+            line-height: 45px;
+            padding: 10px;
+            margin: 10px;
+         }
+      }
+      .previous-page,
+      .next-page {
+         background-color: rgb(86, 86, 215);
+         border-radius: 45px;
+         width: 80px;
+         cursor: pointer;
+         transition: 0.3s ease;
+         &:hover {
+            transform: translateX(-5px);
+         }
+      }
+      .disable {
+         background-color: #bdb9b9;
+      }
+      .active {
+         background-color: rgb(86, 86, 215);
       }
    }
 }
