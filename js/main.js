@@ -244,10 +244,10 @@ function paginationButtonGenerator(page, allUesrsArray) {
       currentPage = page;
       displayUesrsList(allUesrsArray, boxListContainer, rowsCount, currentPage);
 
-      // let prevPage = document.querySelector("button.active");
-      // prevPage.classList.remove("active");
+      let prevPage = document.querySelector("button.active");
+      prevPage.classList.remove("active");
 
-      // button.classList.add("active");
+      button.classList.add("active");
    });
 
    return button;

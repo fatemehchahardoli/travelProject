@@ -19,53 +19,6 @@
          "image": "../images/dd.jfif"
       },
       {
-         "toorCode": 2,
-         "name": "دبی",
-         "price": 14000000,
-         "travelType": "خارجی",
-         "Capacity": 13,
-         "TicketType": "هواپیما",
-         "image": "../images/dd.jfif"
-      },
-      {
-         "toorCode": 2,
-         "name": "دبی",
-         "price": 14000000,
-         "travelType": "خارجی",
-         "Capacity": 13,
-         "TicketType": "هواپیما",
-         "image": "../images/dd.jfif"
-      },
-
-      {
-         "toorCode": 2,
-         "name": "دبی",
-         "price": 14000000,
-         "travelType": "خارجی",
-         "Capacity": 13,
-         "TicketType": "هواپیما",
-         "image": "../images/dd.jfif"
-      },
-      {
-         "toorCode": 2,
-         "name": "دبی",
-         "price": 14000000,
-         "travelType": "خارجی",
-         "Capacity": 13,
-         "TicketType": "هواپیما",
-         "image": "../images/dd.jfif"
-      },
-      {
-         "toorCode": 2,
-         "name": "دبی",
-         "price": 14000000,
-         "travelType": "خارجی",
-         "Capacity": 13,
-         "TicketType": "هواپیما",
-         "image": "../images/dd.jfif"
-      },
-
-      {
          "toorCode": 3,
          "name": "مشهد",
          "price": 1200,
@@ -82,6 +35,71 @@
          "Capacity": 13,
          "TicketType": "هواپیما",
          "image": "../images/amrika.webp"
+      },
+      {
+         "toorCode": 5,
+         "name": "شیراز",
+         "price": 500000,
+         "travelType": "داخلی",
+         "Capacity": 13,
+         "TicketType": "اتوبوس",
+         "image": "../images/shiraz.webp"
+      },
+      {
+         "toorCode": 5,
+         "name": "شیراز",
+         "price": 500000,
+         "travelType": "داخلی",
+         "Capacity": 13,
+         "TicketType": "اتوبوس",
+         "image": "../images/shiraz.webp"
+      },
+      {
+         "toorCode": 5,
+         "name": "شیراز",
+         "price": 500000,
+         "travelType": "داخلی",
+         "Capacity": 13,
+         "TicketType": "اتوبوس",
+         "image": "../images/shiraz.webp"
+      },
+      {
+         "toorCode": 5,
+         "name": "شیراز",
+         "price": 500000,
+         "travelType": "داخلی",
+         "Capacity": 13,
+         "TicketType": "اتوبوس",
+         "image": "../images/shiraz.webp"
+      },
+
+      {
+         "toorCode": 5,
+         "name": "شیراز",
+         "price": 500000,
+         "travelType": "داخلی",
+         "Capacity": 13,
+         "TicketType": "اتوبوس",
+         "image": "../images/shiraz.webp"
+      },
+      {
+         "toorCode": 5,
+         "name": "شیراز",
+         "price": 500000,
+         "travelType": "داخلی",
+         "Capacity": 13,
+         "TicketType": "اتوبوس",
+         "image": "../images/shiraz.webp"
+      },
+
+      {
+         "toorCode": 5,
+         "name": "شیراز",
+         "price": 500000,
+         "travelType": "داخلی",
+         "Capacity": 13,
+         "TicketType": "اتوبوس",
+         "image": "../images/shiraz.webp"
       },
       {
          "toorCode": 5,
