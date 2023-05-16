@@ -15,7 +15,14 @@ nav {
    font-size: 1.2em;
    background-color: white;
    z-index: 999;
-
+   .fa-bars {
+      display: none;
+      margin: 0;
+      position: absolute;
+      left: 29rem;
+      top: 1rem;
+      font-size: 1.5em;
+   }
    .section-left {
       height: 100%;
       padding-left: 5rem;
@@ -130,64 +137,36 @@ nav {
 @media only screen and (max-width: 600px) {
    nav {
       padding: 10px 2rem;
-      @include grid(repeat(2, 1fr), 70px, end, center);
-      grid-template-columns: 0.5fr 1.5fr;
+      @include grid(1fr, 260px, center, center);
       font-family: "Heebo", sans-serif;
       font-size: 1.2em;
       background-color: white;
       z-index: 999;
-
+      .fa-bars {
+         display: block !important;
+      }
       .section-left {
-         height: 100%;
-         padding-left: 5rem;
+         display: none !important;
       }
 
       .section-right {
-         display: flex;
-         justify-content: end;
-         align-items: center;
+         display: none !important;
          height: 100%;
 
          ul {
             li {
-               display: inline-block;
-
-               transition: all 0.2s;
-
-               &:hover {
-                  background-color: #ffc800;
-                  padding: 20px;
-               }
-
-               a {
-                  text-decoration: none;
-                  margin: 20px;
-                  color: $color-dark;
-               }
-
-               i:hover ul li {
-                  display: block;
+               display: block;
+               list-style: none;
+               line-height: 1 !important;
+               margin-top: 1rem !important;
+               i #search {
+                  display: none !important;
                }
             }
          }
 
          button {
-            width: 210px;
-            height: 52px;
-            color: $color-light;
-            background-color: $bg-btn;
-            border: none;
-            font-weight: 700;
-            border-radius: 5px;
-            font-size: 14px;
-            margin-left: 30px;
-            cursor: pointer;
-            @include flex(center, center);
-
-            i {
-               font-size: 20px;
-               margin-top: 3px;
-            }
+            display: none !important;
          }
       }
    }
