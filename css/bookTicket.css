@@ -1,8 +1,7 @@
 * {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .list-style-none {
@@ -55,7 +54,7 @@
   border-radius: 5px;
   border: 0px;
   padding: 0px 20px;
-  background-color: #ffd900;
+  background-color: rgb(255, 217, 0);
   margin-top: 40px;
 }
 
@@ -73,14 +72,12 @@
   height: 74rem;
   padding-top: 10rem;
 }
-
 .bookTicket .container {
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: rgba(26, 21, 19, 0.4);
   border-radius: 5px;
 }
-
 .bookTicket .container .fnameInput,
 .bookTicket .container .lnameInput,
 .bookTicket .container .phoneInput,
@@ -93,16 +90,14 @@
   border: 0px;
   padding: 0px 10px;
 }
-
 .bookTicket .container #btn {
   height: 30px;
   border-radius: 5px;
   border: 0px;
   padding: 0px 20px;
-  background-color: #ffd900;
+  background-color: rgb(255, 217, 0);
   margin-top: 40px;
 }
-
 .bookTicket .container .box {
   text-align: center;
   padding-top: 10px;
@@ -110,33 +105,21 @@
 }
 
 .Meteorology {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
   color: #131212;
   font-size: 2.2em;
   font-weight: bold;
-  background: #66616169;
+  background: rgba(102, 97, 97, 0.4117647059);
   margin-bottom: 3rem;
 }
-
 .Meteorology .city {
   color: #ffd900;
   font-size: 1.4em;
   font-weight: bold;
 }
-
 .Meteorology .weather {
   color: #620909;
-}
-/*# sourceMappingURL=bookTicket.css.map */
+}/*# sourceMappingURL=bookTicket.css.map */

@@ -23,6 +23,8 @@ async function loaddata() {
       .then((res) => res.json())
       .then((res) => res.toorInfo);
    creatBoxEvent(mydata);
+   displayUesrsList(mydata, boxListContainer, rowsCount, currentPage);
+   setupPagination(mydata, paginationContainer, rowsCount);
 }
 loaddata();
 
@@ -197,3 +199,56 @@ let section = document.querySelector(".section-right");
 hamber.addEventListener("click", function () {
    section.style.display = "block ";
 });
+
+//-------pagination
+
+let boxListContainer = document.querySelector("#boxes");
+let paginationContainer = document.querySelector(".pagination");
+
+let currentPage = 1;
+let rowsCount = 6;
+
+function displayUesrsList(allUesrsArray, boxContainer, rowsCount, currentPage) {
+   boxContainer.innerHTML = "";
+
+   let endIndex = rowsCount * currentPage;
+   let startIndex = endIndex - rowsCount;
+
+   let paginatedBox = allUesrsArray.slice(startIndex, endIndex);
+
+   creatBoxEvent(paginatedBox);
+}
+
+function setupPagination(allUesrsArray, pagesContainer, rowsCount) {
+   // Codes
+
+   pagesContainer.innerHTML = "";
+
+   let pageCount = Math.ceil(allUesrsArray.length / rowsCount);
+
+   for (let i = 1; i < pageCount + 1; i++) {
+      let btn = paginationButtonGenerator(i, allUesrsArray);
+      pagesContainer.appendChild(btn);
+   }
+}
+
+function paginationButtonGenerator(page, allUesrsArray) {
+   let button = document.createElement("button");
+   button.innerHTML = page;
+
+   if (page === currentPage) {
+      button.classList.add("active");
+   }
+
+   button.addEventListener("click", function () {
+      currentPage = page;
+      displayUesrsList(allUesrsArray, boxListContainer, rowsCount, currentPage);
+
+      // let prevPage = document.querySelector("button.active");
+      // prevPage.classList.remove("active");
+
+      // button.classList.add("active");
+   });
+
+   return button;
+}
