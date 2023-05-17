@@ -49,17 +49,17 @@
   <div class="bookTicket">
     <div class="container">
       <div class="col-md-6 box">
-        <input class="fnameInput" placeholder="First Name" />
+        <input class="fnameInput" placeholder="First Name"  data-validation="notEmpty"/>
       </div>
 
       <div class="col-md-6 box">
-        <input class="lnameInput" placeholder="Last Name" />
+        <input class="lnameInput" placeholder="Last Name"  data-validation="notEmpty"/>
       </div>
       <div class="col-md-6 box">
-        <input class="phoneInput" placeholder="Phone Number" />
+        <input class="phoneInput" placeholder="Phone Number" data-validation="notEmpty isMobile"/>
       </div>
       <div class="col-md-6 box">
-        <input class="emailInput" placeholder="Email" />
+        <input class="emailInput" placeholder="Email"  data-validation="notEmpty isEmail"/>
       </div>
       <div class="col-md-6 box">
         <select class="countrySelect" id="countrySelect" onchange="countrySelectFunction()">

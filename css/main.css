@@ -169,7 +169,7 @@ nav .section-right button i {
     display: none !important;
   }
   nav .section-right {
-    display: none !important;
+    display: none;
     height: 100%;
   }
   nav .section-right ul li {
@@ -180,6 +180,9 @@ nav .section-right button i {
   }
   nav .section-right ul li i #search {
     display: none !important;
+  }
+  nav .section-right .active {
+    display: block !important;
   }
   nav .section-right button {
     display: none !important;
@@ -928,6 +931,9 @@ footer #footer li a {
   text-decoration: none;
   color: #7d81a5;
 }
+footer #footer li a:hover {
+  color: #ffc800;
+}
 footer #footer .icons {
   margin-top: 30px;
   width: 70%;
@@ -941,6 +947,10 @@ footer #footer .icons ul li i {
   background-color: white;
   border-radius: 5px;
   padding: 5px;
+  transition: 0.3s all;
+}
+footer #footer .icons ul li i:hover {
+  background-color: #ffc800;
 }
 footer .copyright {
   width: 100%;

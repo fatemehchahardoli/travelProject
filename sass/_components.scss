@@ -150,7 +150,7 @@ nav {
       }
 
       .section-right {
-         display: none !important;
+         display: none;
          height: 100%;
 
          ul {
@@ -163,6 +163,9 @@ nav {
                   display: none !important;
                }
             }
+         }
+         .active {
+            display: block !important;
          }
 
          button {

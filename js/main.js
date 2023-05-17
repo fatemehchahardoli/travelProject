@@ -197,7 +197,7 @@ let x = setInterval(function () {
 let hamber = document.querySelector(".fa-bars");
 let section = document.querySelector(".section-right");
 hamber.addEventListener("click", function () {
-   section.style.display = "block ";
+   section.classList.toggle("active");
 });
 
 //-------pagination
