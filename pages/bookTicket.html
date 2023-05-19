@@ -47,7 +47,8 @@
 
   <!-- book ticket -->
   <div class="bookTicket">
-    <div class="container">
+    <div class="container" id="popup-form">
+      <form action="" id="register-form" class="active">
       <div class="col-md-6 box">
         <input class="fnameInput" placeholder="First Name"  data-validation="notEmpty"/>
       </div>
@@ -80,9 +81,13 @@
         </select>
       </div>
       <div class="col-md-12 box">
-        <button id="btn">Book a ticket</button>
+        <button id="btn" type="submit">Book a ticket</button>
       </div>
     </div>
+    <ul class="summery-validation">
+      <!-- <li>نام خود را وارد کنید.</li> -->
+  </ul>
+  </form>
      <!-- Meteorology -->
      <div class="Meteorology">
       <h3 class="city"></h3>

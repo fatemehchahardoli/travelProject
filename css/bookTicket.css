@@ -122,4 +122,16 @@
 }
 .Meteorology .weather {
   color: #620909;
+}
+
+input[type=submit] {
+  cursor: pointer;
+}
+
+ul.summery-validation {
+  margin-top: 0;
+}
+ul.summery-validation li {
+  font-size: 12px;
+  color: red;
 }/*# sourceMappingURL=bookTicket.css.map */
