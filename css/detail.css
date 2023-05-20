@@ -59,13 +59,13 @@ nav .fa-bars {
   display: none;
   margin: 0;
   position: absolute;
-  left: 29rem;
+  right: 30px;
   top: 1rem;
   font-size: 1.5em;
 }
 nav .section-left {
   height: 100%;
-  padding-left: 5rem;
+  padding-left: 0;
 }
 nav .section-right {
   display: flex;
@@ -149,45 +149,6 @@ nav .section-right button i {
   transition: all 1s;
 }
 
-@media only screen and (max-width: 600px) {
-  nav {
-    padding: 10px 2rem;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 260px;
-    align-items: center;
-    justify-content: center;
-    font-family: "Heebo", sans-serif;
-    font-size: 1.2em;
-    background-color: white;
-    z-index: 999;
-  }
-  nav .fa-bars {
-    display: block !important;
-  }
-  nav .section-left {
-    display: none !important;
-  }
-  nav .section-right {
-    display: none;
-    height: 100%;
-  }
-  nav .section-right ul li {
-    display: block;
-    list-style: none;
-    line-height: 1 !important;
-    margin-top: 1rem !important;
-  }
-  nav .section-right ul li i #search {
-    display: none !important;
-  }
-  nav .section-right .active {
-    display: block !important;
-  }
-  nav .section-right button {
-    display: none !important;
-  }
-}
 .btn {
   display: flex;
   justify-content: center;
@@ -347,6 +308,65 @@ strong {
   100% {
     transform: scale(0.75);
     box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+  }
+}
+@media only screen and (min-width: 800px) {
+  nav .section-right ul li a {
+    margin: 9px !important;
+  }
+  nav button {
+    display: none !important;
+  }
+  nav {
+    grid-template-rows: 56px !important;
+  }
+}
+@media only screen and (min-width: 980px) {
+  nav .section-right ul li a {
+    margin: 10px !important;
+  }
+  nav button {
+    display: block !important;
+  }
+}
+@media only screen and (max-width: 800px) {
+  nav {
+    padding: 10px 2rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 260px;
+    align-items: center;
+    justify-content: center;
+    font-family: "Heebo", sans-serif;
+    grid-template-rows: 56px !important;
+    font-size: 1.2em;
+    background-color: white;
+    z-index: 999;
+  }
+  nav .fa-bars {
+    display: block !important;
+  }
+  nav .section-left {
+    display: block !important;
+  }
+  nav .section-right {
+    display: none;
+    height: 100%;
+  }
+  nav .section-right ul li {
+    display: block;
+    list-style: none;
+    line-height: 1 !important;
+    margin-top: 1rem !important;
+  }
+  nav .section-right ul li i #search {
+    display: none !important;
+  }
+  nav .section-right .active {
+    display: block !important;
+  }
+  nav .section-right button {
+    display: none !important;
   }
 }
 * {

@@ -50,17 +50,25 @@
     <div class="container" id="popup-form">
       <form action="" id="register-form" class="active">
       <div class="col-md-6 box">
-        <input class="fnameInput" placeholder="First Name"  data-validation="notEmpty"/>
+        <div class="colorTextError"></div>
+        <input class="fnameInput" placeholder="First Name" data-lable="نام"  data-validation="notEmpty"/>
+        
       </div>
 
       <div class="col-md-6 box">
+        <div class="colorTextError"></div>
         <input class="lnameInput" placeholder="Last Name"  data-validation="notEmpty"/>
+        
       </div>
       <div class="col-md-6 box">
+        <div class="colorTextError"></div>
         <input class="phoneInput" placeholder="Phone Number" data-validation="notEmpty isMobile"/>
+       
       </div>
       <div class="col-md-6 box">
+        <div class="colorTextError"></div>
         <input class="emailInput" placeholder="Email"  data-validation="notEmpty isEmail"/>
+        
       </div>
       <div class="col-md-6 box">
         <select class="countrySelect" id="countrySelect" onchange="countrySelectFunction()">

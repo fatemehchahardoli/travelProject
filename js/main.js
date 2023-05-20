@@ -194,12 +194,21 @@ let x = setInterval(function () {
 
 //hambarger menu----------------------------
 
-let hamber = document.querySelector(".fa-bars");
 let section = document.querySelector(".section-right");
-hamber.addEventListener("click", function () {
-   section.classList.toggle("active");
-});
+let navbar = document.querySelector("nav");
 
+let flag = false;
+document.querySelector(".fa-bars").addEventListener("click", function () {
+   if (!flag) {
+      section.style.display = "block";
+      nav.style.height = "auto";
+      flag = true;
+   } else {
+      section.style.display = "none";
+      nav.style.height = "80px";
+      flag = false;
+   }
+});
 //-------pagination
 
 let boxListContainer = document.querySelector("#boxes");

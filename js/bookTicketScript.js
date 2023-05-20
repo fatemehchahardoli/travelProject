@@ -1,7 +1,7 @@
 let mydata = {
-   Iran: ["tehran", "hamedan", "esfahan"],
-   Canada: ["sangapor", "turkye"],
-   US: ["losonjeles", "us"],
+   Iran: ["tehran", "hamedan", "esfahan", "shiraz"],
+   Canada: ["Toronto", "Vancouver", "Montreal", "Ottawa", "Calgary"],
+   US: ["New York", "Los Angles", "Chicago"],
 };
 let State = document.getElementById("countrySelect");
 let city = document.getElementById("citySelect");
@@ -87,58 +87,65 @@ city.addEventListener("change", function () {
    fetchData();
 });
 //-----------------------------------------------------
+
+//--------form validation
 class FormValidator {
    constructor(myform) {
       this.__myForm = myform;
       this.submitHandler();
+      this.focusHandler();
    }
 
    submitHandler() {
       this.__myForm.addEventListener("submit", (event) => {
          event.preventDefault();
-         var validationMessages = [];
-         let formElements = this.__myForm.getElementsByTagName("input");
-         for (let i = 0; i < formElements.length; i++) {
-            const element = formElements[i];
-            let elementValidations = element.dataset.validation;
-            if (elementValidations) {
-               let elementValidationArray = elementValidations.split(" ");
-               for (let j = 0; j < elementValidationArray.length; j++) {
-                  const func = elementValidationArray[j];
-                  var message = this[func](element);
-                  if (message.length > 0) {
-                     validationMessages.push(message);
-                  }
+      });
+   }
+   focusHandler() {
+      this.__myForm.addEventListener("focusin", (event) => {});
+      this.__myForm.addEventListener("focusout", (event) => {
+         var datasetValidations = event.target.dataset.validation;
+         if (datasetValidations) {
+            let validatArray = datasetValidations.split(" ");
+            for (let i = 0; i < validatArray.length; i++) {
+               const func = validatArray[i];
+               var message = this[func](event.target);
+               let sibling = event.target.previousElementSibling;
+               sibling.innerHTML = message;
+               if (message.length > 0) {
+                  sibling.style.display = "inline";
+                  event.target.style.border = "2px solid red";
+               } else {
+                  sibling.style.display = "none";
+                  event.target.style.border = "none";
                }
             }
-         }
-         var summeryValidation = document.querySelector(".summery-validation");
-         summeryValidation.innerHTML = "";
-         for (let i = 0; i < validationMessages.length; i++) {
-            const message = validationMessages[i];
-            let li = document.createElement("li");
-            li.appendChild(document.createTextNode(message));
-            summeryValidation.appendChild(li);
          }
       });
    }
 
    notEmpty(element) {
-      let label = element.dataset.label;
       if (element.value === "") {
-         return "فیلد" + " " + label + " " + "نباید خالی بماند";
+         return "این فیلد نباید خالی باشد";
       }
       return "";
    }
 
    isMobile(element) {
-      let label = element.dataset.label;
       const re = /^09[0|1|2|3][0-9]{8}$/;
       if (!re.test(element.value)) {
-         return "قالب" + " " + label + " " + "نادرست است";
+         return "قالب موبایل نادرست است";
+      }
+      return "";
+   }
+
+   isEmail(element) {
+      const re = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/g;
+      if (!re.test(element.value)) {
+         return "قالب ایمیل نادرست است";
       }
       return "";
    }
 }
-
-new FormValidator(document.getElementById("popup-form"));
+let registerForm = document.getElementById("register-form");
+new FormValidator(registerForm);
